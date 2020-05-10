@@ -1,0 +1,13 @@
+import pandas as pd
+
+# defining a dictionary
+XYZ_web ={"Days":[1,2,3,4,5,6], "Visitors":[1000,700,6000,1000,400,350],"Bounce_Rate":[20,20,23,15,10,34]}
+
+# creating dataframe
+df =pd.DataFrame(XYZ_web)
+
+# printing first 2 rows
+print(df.head(2))
+
+# printing last 2 rows
+print(df.tail(2))
