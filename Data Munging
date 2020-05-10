@@ -1,0 +1,7 @@
+import pandas as pd
+
+# read CSV file
+country = pd.read_csv('C:\\Users\\mail2_000\\PycharmProjects\\datavis\\dataAnalytics\\username.csv',index_col=0)
+
+# convert CSV to HTML
+country.to_html('user.html')
