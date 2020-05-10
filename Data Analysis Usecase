@@ -1,0 +1,16 @@
+#import necessary libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import style
+
+style.use('fivethirtyeight')
+
+#read CSV file
+country = pd.read_csv('/datavis/dataAnalytics/countries.csv', index_col = 0)
+#create dataframe with 5 rows of data
+df = country.head(5)
+sd = df.reindex(columns = ['population'])
+
+# bar plot
+sd.plot(kind = 'bar')
+plt.show()
